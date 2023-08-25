@@ -1,21 +1,16 @@
-# LiveViewAsync
+# Async Assigns for Phoenix LiveView
 
-**TODO: Add description**
+Task-based system for asynchronously assigning data to a LiveView socket
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `live_view_async` to your list of dependencies in `mix.exs`:
+This package is not available on `hex.pm`.
+Instead, install it directly from GitHub:
 
 ```elixir
 def deps do
   [
-    {:live_view_async, "~> 0.1.0"}
+    {:live_view_async, github: "aj-foster/live-view-async"}
   ]
 end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/live_view_async>.
-
