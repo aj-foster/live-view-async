@@ -66,6 +66,8 @@ defmodule Phoenix.LiveView.Async.Private do
   end
 
   def remove(private, ref) do
+    Process.demonitor(ref, [:flush])
+
     active_refs = MapSet.delete(private.active_refs, ref)
     canceled_refs = MapSet.delete(private.canceled_refs, ref)
     ignored_refs = MapSet.delete(private.ignored_refs, ref)

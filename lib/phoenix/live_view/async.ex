@@ -95,7 +95,7 @@ defmodule Phoenix.LiveView.Async do
       end
 
       defp get_data do
-        data = CodeSandbox.Repo.all(...)
+        data = MyApp.Repo.all(...)
         [data: data, loading: false]
       end
 
@@ -119,7 +119,7 @@ defmodule Phoenix.LiveView.Async do
   If atomic updates are required, the task may return an update function wrapped in a tuple:
 
       defp get_data do
-        count = CodeSandbox.Repo.aggregate(...)
+        count = MyApp.Repo.aggregate(...)
 
         [
           data: {:update, fn current_value -> current_value + count end}
