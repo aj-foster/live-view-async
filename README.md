@@ -58,7 +58,7 @@ It is important to note that the socket's assigns may have changed between the s
 Instead, values can be expressed as an update function wrapped in an `:update` tuple.
 In this case, the values will be integrated into the socket using `Component.update/3`:
 
-```
+```elixir
 [data: {:update, fn x -> x + 1 end}]  =>  Component.update(socket, :data, fn x -> x + 1 end)
 ```
 
@@ -79,5 +79,5 @@ This can be useful for test environments.
 
 The following resources were helpful while building this library:
 
-* [_ Phoenix LiveView: Async Assign Pattern_ by Andy Glassman](https://blog.andyglassman.com/2023/06/phoenix-liveview-async-assign-pattern.html)
+* [_Phoenix LiveView: Async Assign Pattern_ by Andy Glassman](https://blog.andyglassman.com/2023/06/phoenix-liveview-async-assign-pattern.html)
 * [_Async processing in LiveView_ by Berenice Medel](https://fly.io/phoenix-files/liveview-async-task/)
