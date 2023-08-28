@@ -2,6 +2,8 @@
 
 Task-based system for asynchronously assigning data to a LiveView socket
 
+**Note**: This package is unnecessary due to native async support in LiveView.
+
 ## Installation
 
 This package is not available on `hex.pm`.
